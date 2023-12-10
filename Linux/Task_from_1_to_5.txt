@@ -1,0 +1,28 @@
+    1  cat > Pets.txt
+
+    2  cat > "Pack animals.txt"
+
+    3  cat Pets.txt Pack\ animals.txt > Human\ Friends.txt
+
+    4  cat Human\ Friends.txt 
+
+    5  ls
+
+    6  mkdir animals
+
+    7  mv Human\ Friends.txt animals
+
+    8  ls
+
+    9  sudo dpkg -i mysql-apt-config_0.8.28-1_all.deb
+
+   10  sudo apt update
+
+   12  sudo apt install mysql-server mysql-client
+   
+   13  sudo dpkg -i zoom_amd64.deb 
+
+   14  sudo dpkg -r zoom 
+
+   15  history
+

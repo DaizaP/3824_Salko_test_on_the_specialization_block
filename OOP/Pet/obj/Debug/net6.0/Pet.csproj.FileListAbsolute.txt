@@ -1,0 +1,14 @@
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.AssemblyInfoInputs.cache
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.AssemblyInfo.cs
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\bin\Debug\net6.0\Pet.exe
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\bin\Debug\net6.0\Pet.deps.json
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\bin\Debug\net6.0\Pet.runtimeconfig.json
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\bin\Debug\net6.0\Pet.dll
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\bin\Debug\net6.0\Pet.pdb
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.dll
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\refint\Pet.dll
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.pdb
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\Pet.genruntimeconfig.cache
+C:\Users\Дмитрий\Desktop\Обучение\3824_Итоговая работа\OOP\Pet\obj\Debug\net6.0\ref\Pet.dll
