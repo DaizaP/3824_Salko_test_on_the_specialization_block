@@ -24,13 +24,13 @@ namespace Pet.Presenter
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        request.OutputRequest(e.Message);
                     }
                 }
                 switch (mainMenuPoint)
                 {
                     case 0:
-                        Console.WriteLine("До свидания!");
+                        request.OutputRequest("До свидания!");
                         active = false;
                         break;
                     case 1:
@@ -65,7 +65,7 @@ namespace Pet.Presenter
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    request.OutputRequest(e.Message);
                 }
             }
             switch (typePetMenuPoint)
@@ -90,19 +90,19 @@ namespace Pet.Presenter
             {
                 arrayPet.AddPet(new Dog(AddPetBirthDate(), AddPetName(), AddPetCommand()));
                 AddCount();
-                Console.WriteLine("Собака добавлена.");
+                request.OutputRequest("Собака добавлена.");
             }
             else if (typePet == "Кошка")
             {
                 arrayPet.AddPet(new Cat(AddPetBirthDate(), AddPetName(), AddPetCommand()));
                 AddCount();
-                Console.WriteLine("Кошка добавлена.");
+                request.OutputRequest("Кошка добавлена.");
             }
             else if (typePet == "Хомяк")
             {
                 arrayPet.AddPet(new Hamster(AddPetBirthDate(), AddPetName(), AddPetCommand()));
                 AddCount();
-                Console.WriteLine("Хомяк добавлен.");
+                request.OutputRequest("Хомяк добавлен.");
             }
         }
 
@@ -128,11 +128,11 @@ namespace Pet.Presenter
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    request.OutputRequest(e.Message);
                     valid = false;
                 }
             }
-            Console.WriteLine($"Добавленные команды: {String.Join(", ", commands)}");
+            request.OutputRequest($"Добавленные команды: {String.Join(", ", commands)}");
             return commands;
         }
 
@@ -150,11 +150,11 @@ namespace Pet.Presenter
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    request.OutputRequest(e.Message);
                     valid = false;
                 }
             }
-            Console.WriteLine($"Добавленная дата рождения: {birthDate}");
+            request.OutputRequest($"Добавленная дата рождения: {birthDate}");
             return birthDate;
         }
 
@@ -172,11 +172,11 @@ namespace Pet.Presenter
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    request.OutputRequest(e.Message);
                     valid = false;
                 }
             }
-            Console.WriteLine($"Добавленное имя: {name}\n");
+            request.OutputRequest($"Добавленное имя: {name}\n");
             return name;
         }
 
@@ -188,7 +188,7 @@ namespace Pet.Presenter
             Animals foundPet = arrayPet.FindPet(findNameRequest);
             if (foundPet == null)
             {
-                Console.WriteLine("Животное не найдено.");
+                request.OutputRequest("Животное не найдено.");
             }
             else
             {
@@ -204,7 +204,7 @@ namespace Pet.Presenter
                         }
                         catch (Exception e)
                         {
-                            Console.WriteLine(e.Message);
+                            request.OutputRequest(e.Message);
                         }
                     }
                     switch (petMenuPoint)
@@ -230,14 +230,14 @@ namespace Pet.Presenter
                                 }
                                 catch (Exception e)
                                 {
-                                    Console.WriteLine(e.Message);
+                                    request.OutputRequest(e.Message);
                                     valid = false;
                                 }
                             }
                             petMenuPoint = -1;
                             break;
                         case 2:
-                            Console.WriteLine(String.Join(", ", foundPet.getCommand()));
+                            request.OutputRequest(String.Join(", ", foundPet.getCommand()));
                             petMenuPoint = -1;
                             break;
                     }
@@ -252,12 +252,12 @@ namespace Pet.Presenter
             {
                 using (ICounter counter = new ICounter())
                 {
-                    Console.WriteLine(counter.getCount());
+                    request.OutputRequest($"Количество животных в реестре: {counter.getCount()}\n");
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                request.OutputRequest(e.Message);
             }
         }
         internal static void AddCount()
@@ -271,7 +271,7 @@ namespace Pet.Presenter
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                request.OutputRequest(e.Message);
             }
         }
     }

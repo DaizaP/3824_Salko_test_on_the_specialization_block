@@ -9,7 +9,7 @@ namespace Pet.Model
 
         public override string ToString()
         {
-            return $"Имя:{Name}. Вид: Кот. Дата рождения: {BirthDate}. Команды: {String.Join(", ", Commands)}";
+            return $"Имя:{Name}. Вид: Кошка. Дата рождения: {BirthDate}. Команды: {String.Join(", ", Commands)}";
         }
     }
 }
