@@ -1,6 +1,5 @@
 ﻿using Pet.Model;
 using Pet.View;
-using System;
 
 namespace Pet.Presenter
 {
@@ -250,15 +249,13 @@ namespace Pet.Presenter
 
         internal static void GetCountPet()
         {
-            ICounter counter = new ICounter();
+            using ICounter counter = new ICounter();
             Console.WriteLine(counter.getCount());
         }
         internal static void AddCount() 
         {
-            using (ICounter counter = new ICounter())
-            {
-                counter.add();
-            }
+            using ICounter counter = new ICounter();
+            counter.add();
         }
     }
 }

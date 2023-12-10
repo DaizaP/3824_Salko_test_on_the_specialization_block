@@ -3,24 +3,36 @@ namespace Pet.Model
 {
     public class ICounter : IDisposable
     {
-        private static int counter = 0;
+        private int Counter = 0;
+        private bool _disposedValue;
 
-        public ICounter() { }
+        ~ICounter() => Dispose(false);
 
-        public void add() 
+        public void Dispose()
         {
-            counter++;
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
-        void IDisposable.Dispose() 
-        { 
-        
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposedValue)
+            {
+                if (disposing)
+                {
+                }
+                _disposedValue = true;
+            }
         }
-        public void Dispose() { }
+
+        public void add()
+        {
+            Counter++;
+        }
 
         public int getCount() 
         { 
-            return counter; 
+            return Counter; 
         }
 
     }
