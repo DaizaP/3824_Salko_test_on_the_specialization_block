@@ -5,9 +5,9 @@ namespace Pet.Model
     {
         private static int counter = 0;
         private static bool disposedStatus;
-         public ICounter()
+        public ICounter()
         {
-            if(disposedStatus) { throw new Exception("Объект уже создан."); }
+            if (disposedStatus) { throw new Exception("Объект уже создан."); }
             Dispose(false);
         }
 
@@ -33,14 +33,14 @@ namespace Pet.Model
         {
             if (disposedStatus)
             {
-                counter++; 
+                counter++;
             }
             else { throw new Exception("Нельзя получить доступ к закрытому объекту."); }
         }
 
-        public int getCount() 
-        { 
-            return counter; 
+        public int getCount()
+        {
+            return counter;
         }
 
     }

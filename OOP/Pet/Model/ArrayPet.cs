@@ -16,7 +16,7 @@ namespace Pet.Model
 
         public void PrintAllPet()
         {
-            foreach(Animals product in petArray)
+            foreach (Animals product in petArray)
             {
                 Console.WriteLine(product.ToString());
             }

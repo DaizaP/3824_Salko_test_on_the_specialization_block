@@ -86,24 +86,24 @@ namespace Pet.Presenter
 
         internal static void AddPet(string typePet)
         {
-                if (typePet == "Собака")
-                {
-                    arrayPet.AddPet(new Dog(AddPetBirthDate(), AddPetName(), AddPetCommand()));
-                    AddCount();
-                    Console.WriteLine("Собака добавлена.");
-                }
-                else if (typePet == "Кошка")
-                {
-                    arrayPet.AddPet(new Cat(AddPetBirthDate(), AddPetName(), AddPetCommand()));
-                    AddCount();
-                    Console.WriteLine("Кошка добавлена.");
-                }
-                else if (typePet == "Хомяк")
-                {
-                    arrayPet.AddPet(new Hamster(AddPetBirthDate(), AddPetName(), AddPetCommand()));
-                    AddCount();
-                    Console.WriteLine("Хомяк добавлен.");
-                }
+            if (typePet == "Собака")
+            {
+                arrayPet.AddPet(new Dog(AddPetBirthDate(), AddPetName(), AddPetCommand()));
+                AddCount();
+                Console.WriteLine("Собака добавлена.");
+            }
+            else if (typePet == "Кошка")
+            {
+                arrayPet.AddPet(new Cat(AddPetBirthDate(), AddPetName(), AddPetCommand()));
+                AddCount();
+                Console.WriteLine("Кошка добавлена.");
+            }
+            else if (typePet == "Хомяк")
+            {
+                arrayPet.AddPet(new Hamster(AddPetBirthDate(), AddPetName(), AddPetCommand()));
+                AddCount();
+                Console.WriteLine("Хомяк добавлен.");
+            }
         }
 
         internal static List<string> AddPetCommand()
