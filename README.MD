@@ -44,12 +44,12 @@
 ```
 
 5. Выложить историю команд в терминале ubuntu
-[Ссылка](https://github.com/DaizaP/3824_Salko_test_on_the_specialization_block/blob/57de3669d0664b2bfdabf82c9cb3e79952d092b2/Linux/Task_from_1_to_5.txt)
+[Ссылка](Linux/Task_from_1_to_5.txt)
 6. Нарисовать диаграмму, в которой есть класс родительский класс, домашние
 животные и вьючные животные, в составы которых в случае домашних
 животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
 войдут: Лошади, верблюды и ослы.
-[Ссылка](https://github.com/DaizaP/3824_Salko_test_on_the_specialization_block/blob/57de3669d0664b2bfdabf82c9cb3e79952d092b2/OOP/Diagram/ClassDiagramPet.png)
+[Ссылка](OOP/Diagram/ClassDiagram.png)
 
 
 7. В подключенном MySQL репозитории создать базу данных “Друзья
@@ -269,7 +269,7 @@ LEFT JOIN Animals am ON am.id = pa.AnimalClassId;
 
 13. Создать класс с Инкапсуляцией методов и наследованием по диаграмме.
 
-[Ссылка](https://github.com/DaizaP/3824_Salko_test_on_the_specialization_block/tree/57de3669d0664b2bfdabf82c9cb3e79952d092b2/OOP/Pet/Model)
+[Ссылка](OOP/Pet/Model)
 14. Написать программу, имитирующую работу реестра домашних животных.
 В программе должен быть реализован следующий функционал:    
 	14.1 Завести новое животное    
@@ -278,7 +278,7 @@ LEFT JOIN Animals am ON am.id = pa.AnimalClassId;
 	14.4 обучить животное новым командам    
 	14.5 Реализовать навигацию по меню 
 
-[Ссылка](https://github.com/DaizaP/3824_Salko_test_on_the_specialization_block/tree/57de3669d0664b2bfdabf82c9cb3e79952d092b2/OOP/Pet) 
+[Ссылка](OOP/Pet) 
 15. Создайте класс Счетчик, у которого есть метод add(), увеличивающий̆
 значение внутренней̆ int переменной̆ на 1 при нажатии “Завести новое
 животное” Сделайте так, чтобы с объектом такого типа можно было работать в
@@ -286,4 +286,4 @@ LEFT JOIN Animals am ON am.id = pa.AnimalClassId;
 типа счетчик была не в ресурсном try и/или ресурс остался открыт. Значение
 считать в ресурсе try, если при заведении животного заполнены все поля.
 
-[Ссылка](https://github.com/DaizaP/3824_Salko_test_on_the_specialization_block/blob/57de3669d0664b2bfdabf82c9cb3e79952d092b2/OOP/Pet/Model/Counter.cs)
+[Ссылка](OOP/Pet/Model/Counter.cs)
