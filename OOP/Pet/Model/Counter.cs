@@ -3,10 +3,13 @@ namespace Pet.Model
 {
     public class ICounter : IDisposable
     {
-        private int Counter = 0;
-        private bool _disposedValue;
-
-        ~ICounter() => Dispose(false);
+        private static int counter = 0;
+        private static bool disposedStatus;
+         public ICounter()
+        {
+            if(disposedStatus) { throw new Exception("Объект уже создан."); }
+            Dispose(false);
+        }
 
         public void Dispose()
         {
@@ -16,23 +19,28 @@ namespace Pet.Model
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!_disposedValue)
+            if (disposedStatus == false)
             {
-                if (disposing)
-                {
-                }
-                _disposedValue = true;
+                disposedStatus = true;
+            }
+            if (disposing)
+            {
+                disposedStatus = false;
             }
         }
 
         public void add()
         {
-            Counter++;
+            if (disposedStatus)
+            {
+                counter++; 
+            }
+            else { throw new Exception("Нельзя получить доступ к закрытому объекту."); }
         }
 
         public int getCount() 
         { 
-            return Counter; 
+            return counter; 
         }
 
     }
